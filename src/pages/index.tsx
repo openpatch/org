@@ -3,57 +3,111 @@ import {
   Box,
   Card,
   CardContent,
+  CardHeader,
+  Center,
   Container,
   Heading,
-  Icon,
-  PatternCenter,
+  Image,
+  Link,
+  Pattern,
   Text,
   TextLink,
 } from "@openpatch/patches";
-import { Home as HomeIcon } from "@openpatch/patches/icons";
-import Image from "next/image";
+import { NavLayout } from "../components/NavLayout";
 
 export default function Home() {
   return (
-    <PatternCenter>
-      <Box p="standard">
-        <Container maxWidth="small">
-          <Card>
-            <CardContent>
-              <Heading textAlign="center">
-                <Box mr="small" display="inline">
-                  <Icon size="large">
-                    <HomeIcon />
-                  </Icon>
-                </Box>
-                Welcome to Patches!
-              </Heading>
-              <Image alt="logo" width="800" height="auto" src="/patches.svg" />
-              <Text textAlign="center">
-                Get started by editing pages/index.tsx.
-              </Text>
-            </CardContent>
-          </Card>
-          <Box mt="standard">
+    <NavLayout>
+      <Pattern opacity={0.1} mb="standard">
+        <Center height="500px">
+          <Heading textColor="card" as="h1">
+            OpenPatch
+          </Heading>
+          <Heading textColor="card" as="h2" textAlign="center">
+            Assessments of Programming Competencies
+          </Heading>
+        </Center>
+      </Pattern>
+      <Container>
+        <Center mx="standard" my="xxlarge">
+          <Heading as="h2">Our Work</Heading>
+          <Box maxWidth="800px" mb="large">
+            <Text textAlign="center" fontSize="large">
+              OpenPatch is a group of developer, educator and researchers
+              specialized in assessments of programming competencies. We create
+              dynamic flow-based assessments, interactive task formats, easy to
+              understand reports and a platform for sharing.
+            </Text>
+          </Box>
+          <AutoGrid columns={[1, 2, 2]} gap="standard">
+            <Card>
+              <CardHeader subtitle="Development of simple linear assessments to complex assessments with multiple paths for giving precise diagnosis.">
+                Flow-based assessments
+              </CardHeader>
+            </Card>
+            <Card>
+              <CardHeader subtitle="Development of interactive task for assessing multiple aspects of programming competencies.">
+                Interactive Tasks
+              </CardHeader>
+            </Card>
+            <Card>
+              <CardHeader subtitle="Research on how user-friendly reports can be shaped and presented to be understood and processed in a blink of an eye.">
+                User-Friendly Reports
+              </CardHeader>
+            </Card>
+            <Card>
+              <CardHeader subtitle="Development of a platform for sharing flow-based assessments with the world.">
+                Platform for Sharing
+              </CardHeader>
+            </Card>
+          </AutoGrid>
+        </Center>
+        <Center mx="standard" my="xxlarge">
+          <Heading as="h2">Our Supporters</Heading>
+          <Box maxWidth="800px" mb="large" mt="large">
+            <Text textAlign="center" fontSize="large">
+              We are open to collaborate with individual teachers, schools,
+              universities or companies, who are interessted in assessing their
+              people in order to provide efficent training.
+            </Text>
+          </Box>
+          <AutoGrid columns={[1, 2, 2]} gap="standard">
+            <Card>
+              <CardContent>
+                <Link href="https://www.ddi.wiwi.uni-due.de/en/home/">
+                  <Image
+                    title="Computer Education Research Group, University of Duisburg-Essen"
+                    height="100px"
+                    src="https://www.ddi.wiwi.uni-due.de/fileadmin/fileupload/I-DDI/ddi_de.png"
+                  />
+                </Link>
+              </CardContent>
+            </Card>
+          </AutoGrid>
+        </Center>
+        <Center mx="standard" my="xxlarge">
+          <Heading as="h2">Contact Us</Heading>
+          <Box maxWidth="800px" mb="large" mt="large">
             <AutoGrid columns={[1, 2]} gap="standard">
-              <Card>
-                <CardContent>
-                  <TextLink href="https://openpatch.github.io/patches">
-                    Documentation
+              <Text textAlign="center" fontSize="large">
+                If you are interessted in a collaboration, feel free to contact
+                us. We are looking forward to hearing your ideas!
+              </Text>
+              <Center>
+                <Text textAlign="left" fontSize="large">
+                  <TextLink href="mailto:contact@openpatch.org">
+                    E-Mail: contact@openpatch.org
                   </TextLink>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardContent>
-                  <TextLink href="https://github.com/openpatch/patches">
-                    Source Code
+                  <br />
+                  <TextLink href="https://twitter.com/openpatchorg">
+                    Twitter: @openpatchorg
                   </TextLink>
-                </CardContent>
-              </Card>
+                </Text>
+              </Center>
             </AutoGrid>
           </Box>
-        </Container>
-      </Box>
-    </PatternCenter>
+        </Center>
+      </Container>
+    </NavLayout>
   );
 }
