@@ -7,7 +7,10 @@ abstract: >
 
 publishedAt: "2020-08-28"
 image: "/static/social_media.jpg"
-author: Mike Barkmin
+author:
+  name: Mike Barkmin
+  image: https://avatars.githubusercontent.com/u/2592379?v=4
+  twitter: mikebarkmin
 ---
 
 One important factor to get OpenPatch going and to spread the word about it
@@ -37,24 +40,22 @@ For social media posts, you need to understand how previews of shared links are 
 - `og:image` - An image URL which should represent your object within the graph.
 - `og:url` - The canonical URL of your object that will be used as its permanent ID in the graph, e.g., "https://www.imdb.com/title/tt0117500/".
 
-For example, for our [Blog](https://blog.openpatch.app) (copy of our dev.to
+For example, for our [Blog](https://openpatch.org/blog) (copy of our dev.to
 blog) we know what the title, type, and URL should be. We could also create a
 unique image for each blog post and just set the image manually. But we would
 like to have a consistent style for the images. Therefore, we have created a
 microservice which just creates these images on-the-fly depending on URL
 query parameters. It is built on top of [og-image by
 vercel](https://github.com/vercel/og-image), but was adapted to fit our
-custom style. It supports light and dark images, usernames, avatars,
+custom style. It supports usernames, avatars,
 markdown, and additional icons. Here are two examples:
 
-![Opengraph light](/static/opengraph_light.png)
+![Opengraph OpenGraph](https://og.openpatch.org/To%20**Type**%20or%20not%20to%20**Type**%3F%20That%20is%20the%20Question!%20%F0%9F%A4%B7.png?md=1&fontSize=100px&username=mikebarkmin&avatar=https%3A%2F%2Fblog.openpatch.app%2Fstatic%2Fmike_barkmin.jpg&images=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fremojansen%2Flogo.ts%40master%2Fts.svg)
 
-![OpenPatch dark](/static/opengraph_dark.png)
-
-The url for the second image looks like this:
-[https://og.openpatch.app/To%20**Type**%20or%20not%20to%20**Type**%3F%20That%20is%20the%20Question!%20%F0%9F%A4%B7.png?theme=dark&md=1&fontSize=100px&username=mikebarkmin&avatar=https%3A%2F%2Fblog.openpatch.app%2Fstatic%2Fmike_barkmin.jpg&images=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fremojansen%2Flogo.ts%40master%2Fts.svg](https://og.openpatch.app/To%20**Type**%20or%20not%20to%20**Type**%3F%20That%20is%20the%20Question!%20%F0%9F%A4%B7.png?theme=dark&md=1&fontSize=100px&username=mikebarkmin&avatar=https%3A%2F%2Fblog.openpatch.app%2Fstatic%2Fmike_barkmin.jpg&images=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fremojansen%2Flogo.ts%40master%2Fts.svg)
+The url for the image looks like this:
+[https://og.openpatch.org/To%20**Type**%20or%20not%20to%20**Type**%3F%20That%20is%20the%20Question!%20%F0%9F%A4%B7.png?md=1&fontSize=100px&username=mikebarkmin&avatar=https%3A%2F%2Fblog.openpatch.app%2Fstatic%2Fmike_barkmin.jpg&images=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fremojansen%2Flogo.ts%40master%2Fts.svg](https://og.openpatch.org/To%20**Type**%20or%20not%20to%20**Type**%3F%20That%20is%20the%20Question!%20%F0%9F%A4%B7.png?md=1&fontSize=100px&username=mikebarkmin&avatar=https%3A%2F%2Fblog.openpatch.app%2Fstatic%2Fmike_barkmin.jpg&images=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fremojansen%2Flogo.ts%40master%2Fts.svg)
 
 What do you think? Would you stop scrolling through social media, if you encounter one of our images?
 
 You can find the source code of the open graph microservice here: https://github.com/openpatch/og-image
-You can test out the open graph microservice here: https://og.openpatch.app/
+You can test out the open graph microservice here: https://og.openpatch.org/

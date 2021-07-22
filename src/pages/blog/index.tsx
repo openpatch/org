@@ -12,6 +12,7 @@ import {
 import fs from "fs";
 import matter from "gray-matter";
 import { GetStaticProps } from "next";
+import { DefaultSeo } from "next-seo";
 import Link from "next/link";
 import path from "path";
 import { NavLayout } from "../../components/NavLayout";
@@ -34,6 +35,7 @@ type BlogProps = {
 export default function Blog({ posts }: BlogProps) {
   return (
     <NavLayout>
+      <DefaultSeo title="Blog" />
       <PageHeader variant="overlap">Blog</PageHeader>
       <Main variant="overlap">
         <AutoGrid gap="standard">

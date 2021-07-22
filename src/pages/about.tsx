@@ -12,11 +12,13 @@ import {
   Text,
   TextLink,
 } from "@openpatch/patches";
+import { DefaultSeo } from "next-seo";
 import { NavLayout } from "../components/NavLayout";
 
 export default function About() {
   return (
     <NavLayout>
+      <DefaultSeo title="About" />
       <Main>
         <Box mx="standard">
           <Container>

@@ -24,7 +24,7 @@ export default function Home() {
             OpenPatch
           </Heading>
           <Heading textColor="card" as="h2" textAlign="center">
-            Assessments of Programming Competencies
+            Assessment of Programming Competencies
           </Heading>
         </Center>
       </Pattern>

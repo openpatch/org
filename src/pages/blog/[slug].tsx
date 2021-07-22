@@ -12,6 +12,7 @@ import matter from "gray-matter";
 import { GetStaticProps } from "next";
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
+import { NextSeo } from "next-seo";
 import path from "path";
 import { NavLayout } from "../../components/NavLayout";
 import { postFilePaths, POSTS_PATH } from "../../utils/mdxUtils";
@@ -23,7 +24,11 @@ interface Props {
     abstract: string;
     image: string;
     publishedAt: string;
-    author: string;
+    author: {
+      name: string;
+      image: string;
+      twitter: string;
+    };
   };
 }
 
@@ -32,8 +37,31 @@ const components = {
 };
 
 export default function ExamplePage({ mdxSource, frontMatter }: Props) {
+  let url = `https://og.openpatch.org/${encodeURIComponent(
+    frontMatter.title
+  )}.png?md=1&fontSize=100px&username=${encodeURIComponent(
+    frontMatter.author.name
+  )}&avatar=${encodeURIComponent(frontMatter.author.image)}`;
   return (
     <NavLayout>
+      <NextSeo
+        title={frontMatter.title}
+        twitter={{
+          handle: `@${frontMatter.author.twitter}`,
+        }}
+        openGraph={{
+          title: frontMatter.title,
+          type: "article",
+          article: {
+            publishedTime: new Date(frontMatter.publishedAt).toISOString(),
+          },
+          images: [
+            {
+              url,
+            },
+          ],
+        }}
+      />
       <PageHeader variant="overlap">{frontMatter.title}</PageHeader>
       <Main variant="overlap">
         <Card>
