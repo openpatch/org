@@ -47,6 +47,7 @@ export default function ExamplePage({ mdxSource, frontMatter }: Props) {
     <Fragment>
       <NextSeo
         title={frontMatter.title}
+        description={frontMatter.abstract}
         twitter={{
           handle: `@${frontMatter.author.twitter}`,
         }}

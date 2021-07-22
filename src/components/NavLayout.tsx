@@ -8,7 +8,7 @@ export const NavLayout: FC<NavLayoutProps> = ({ children }) => {
     <Fragment>
       <Nav
         logo={
-          <TextLink href="/">
+          <TextLink href="/" title="Homepage">
             <Logo height="40px" width="40px" color="currentColor" />
           </TextLink>
         }

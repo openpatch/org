@@ -10,6 +10,7 @@ function MyApp({ Component, pageProps }) {
       <DefaultSeo
         titleTemplate="OpenPatch | %s"
         defaultTitle="OpenPatch"
+        description="Assessment of Programming Competencies"
         openGraph={{
           type: "website",
           locale: "en_US",
