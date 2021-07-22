@@ -14,6 +14,7 @@ import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
 import { NextSeo } from "next-seo";
 import path from "path";
+import { Fragment } from "react";
 import { NavLayout } from "../../components/NavLayout";
 import { postFilePaths, POSTS_PATH } from "../../utils/mdxUtils";
 
@@ -43,7 +44,7 @@ export default function ExamplePage({ mdxSource, frontMatter }: Props) {
     frontMatter.author.name
   )}&avatar=${encodeURIComponent(frontMatter.author.image)}`;
   return (
-    <NavLayout>
+    <Fragment>
       <NextSeo
         title={frontMatter.title}
         twitter={{
@@ -62,19 +63,21 @@ export default function ExamplePage({ mdxSource, frontMatter }: Props) {
           ],
         }}
       />
-      <PageHeader variant="overlap">{frontMatter.title}</PageHeader>
-      <Main variant="overlap">
-        <Card>
-          <CardMedia height="200px" image={frontMatter.image} />
-          <CardContent>
-            <MDXRemote {...mdxSource} components={components} />
-          </CardContent>
-          <CardFooter>
-            {frontMatter.author} | {frontMatter.publishedAt}
-          </CardFooter>
-        </Card>
-      </Main>
-    </NavLayout>
+      <NavLayout>
+        <PageHeader variant="overlap">{frontMatter.title}</PageHeader>
+        <Main variant="overlap">
+          <Card>
+            <CardMedia height="200px" image={frontMatter.image} />
+            <CardContent>
+              <MDXRemote {...mdxSource} components={components} />
+            </CardContent>
+            <CardFooter>
+              {frontMatter.author.name} | {frontMatter.publishedAt}
+            </CardFooter>
+          </Card>
+        </Main>
+      </NavLayout>
+    </Fragment>
   );
 }
 

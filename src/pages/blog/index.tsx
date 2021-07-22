@@ -22,7 +22,11 @@ type BlogProps = {
   posts: {
     content: string;
     frontMatter: {
-      author: string;
+      author: {
+        name: string;
+        image: string;
+        twitter: string;
+      };
       abstract: string;
       image: string;
       title: string;
@@ -54,7 +58,7 @@ export default function Blog({ posts }: BlogProps) {
               >
                 <Card>
                   <CardHeader
-                    subtitle={`${frontMatter.author} | ${frontMatter.publishedAt}`}
+                    subtitle={`${frontMatter.author.name} | ${frontMatter.publishedAt}`}
                   >
                     {frontMatter.title}
                   </CardHeader>
