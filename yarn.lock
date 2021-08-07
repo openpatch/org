@@ -735,10 +735,10 @@
   resolved "https://registry.yarnpkg.com/@next/react-refresh-utils/-/react-refresh-utils-11.0.1.tgz#a7509f22b6f70c13101a26573afd295295f1c020"
   integrity sha512-K347DM6Z7gBSE+TfUaTTceWvbj0B6iNAsFZXbFZOlfg3uyz2sbKpzPYYFocCc27yjLaS8OfR8DEdS2mZXi8Saw==
 
-"@openpatch/patches@1.11.0":
-  version "1.11.0"
-  resolved "https://registry.yarnpkg.com/@openpatch/patches/-/patches-1.11.0.tgz#4b43e4e06e97b14e3fdf38dd320fa7847a181585"
-  integrity sha512-n9t+yVycVojiWTSA70adxjIkNyR344ofjXUKjDnKbDNxXw5HRiURRdWquegGX0SP4H8D21Ztv2lEF+DC3Z+T6Q==
+"@openpatch/patches@1.11.1":
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/@openpatch/patches/-/patches-1.11.1.tgz#a9527d2c75256e74bc7ceb53bfc61d78135ba086"
+  integrity sha512-J7Su+Fmf5Eds5ArnWrnSPw85QpGG9cTF9WmMy7eYEnJYHqnhLZ6v/+drNLzqYK2CN300ecT/3HMM6SfzXUhnqg==
   dependencies:
     codemirror "^5.60.0"
     lodash "^4.17.21"
@@ -860,10 +860,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.37.tgz#a3dd8da4eb84a996c36e331df98d82abd76b516e"
   integrity sha512-XYmBiy+ohOR4Lh5jE379fV2IU+6Jn4g5qASinhitfyO71b/sCo6MKsMLF5tc7Zf2CE8hViVQyYSobJNke8OvUw==
 
-"@types/node@16.4.0":
-  version "16.4.0"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.4.0.tgz#2c219eaa3b8d1e4d04f4dd6e40bc68c7467d5272"
-  integrity sha512-HrJuE7Mlqcjj+00JqMWpZ3tY8w7EUd+S0U3L1+PQSWiXZbOgyQDvi+ogoUxaHApPJq5diKxYBQwA3iIlNcPqOg==
+"@types/node@16.4.13":
+  version "16.4.13"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.4.13.tgz#7dfd9c14661edc65cccd43a29eb454174642370d"
+  integrity sha512-bLL69sKtd25w7p1nvg9pigE4gtKVpGTPojBFLMkGHXuUgap2sLqQt2qUnqmVCDfzGUL0DRNZP+1prIZJbMeAXg==
 
 "@types/parse-json@^4.0.0":
   version "4.0.0"

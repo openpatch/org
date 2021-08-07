@@ -11,7 +11,7 @@
     "@emotion/cache": "11.4.0",
     "@emotion/react": "11.4.0",
     "@emotion/styled": "11.3.0",
-    "@openpatch/patches": "1.11.0",
+    "@openpatch/patches": "1.11.1",
     "gray-matter": "4.0.3",
     "next": "11.0.1",
     "next-mdx-remote": "3.0.4",
@@ -25,7 +25,7 @@
   "devDependencies": {
     "@babel/core": "7.15.0",
     "@emotion/babel-preset-css-prop": "11.2.0",
-    "@types/node": "16.4.0",
+    "@types/node": "16.4.13",
     "@types/react": "17.0.16",
     "typescript": "4.3.5",
     "typescript-styled-plugin": "0.18.1"
