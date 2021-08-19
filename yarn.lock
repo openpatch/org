@@ -750,10 +750,10 @@
   dependencies:
     "@napi-rs/triples" "^1.0.3"
 
-"@openpatch/patches@1.12.0":
-  version "1.12.0"
-  resolved "https://registry.yarnpkg.com/@openpatch/patches/-/patches-1.12.0.tgz#3293623774093e9a901d28db49f6e077afca018f"
-  integrity sha512-rT4zqFRgL5bIkPSk+qzk6MmwRSRgETNJ5RnJ49U9hOIaLIKOMe8u0PE9aNw11U5mLAhHc+Zl7qMVu0ML6sWMQA==
+"@openpatch/patches@1.12.1":
+  version "1.12.1"
+  resolved "https://registry.yarnpkg.com/@openpatch/patches/-/patches-1.12.1.tgz#5087e7d415d18825561fb1fbcd8049795338049c"
+  integrity sha512-c3MTNQ2vC0nFUpGCt1BzA5r0JtFAZ3ZQbGtIiCBF+aMeUl+5edKxFxp2DVq+Lu7EfXmwCh0+4Z0HY/kbUt6BBg==
   dependencies:
     codemirror "^5.62.2"
     lodash "^4.17.21"
