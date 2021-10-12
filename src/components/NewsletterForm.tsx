@@ -9,13 +9,15 @@ import React, { useState } from "react";
 
 export const NewsletterForm = ({ title = "Subscribe to our newsletter" }) => {
   const [email, setEmail] = useState("");
-  const [error, setError] = useState(false);
   const [message, setMessage] = useState("");
-  const [subscribed, setSubscribed] = useState(false);
+  const [state, setState] = useState<
+    "default" | "subscribed" | "subscribing" | "error"
+  >("default");
 
   const subscribe = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
+    setState("subscribing");
     const res = await fetch(`/api/newsletter`, {
       body: JSON.stringify({
         email,
@@ -28,17 +30,16 @@ export const NewsletterForm = ({ title = "Subscribe to our newsletter" }) => {
 
     const { error } = await res.json();
     if (error) {
-      setError(true);
       setMessage(
         "Your e-mail adress is invalid or you are already subscribed!"
       );
+      setState("error");
       return;
     }
 
     setEmail("");
-    setError(false);
-    setSubscribed(true);
     setMessage("Successfully! 🎉 You are now subscribed.");
+    setState("subscribed");
   };
 
   return (
@@ -56,10 +57,12 @@ export const NewsletterForm = ({ title = "Subscribe to our newsletter" }) => {
                 id="email"
                 value={email}
                 onChange={setEmail}
-                disabled={subscribed}
+                disabled={state === "subscribing" || state === "subscribed"}
                 required
                 placeholder={
-                  subscribed ? "You're subscribed! 🎉" : "Enter your email"
+                  state === "subscribed"
+                    ? "You're subscribed! 🎉"
+                    : "Enter your email"
                 }
               />
             </Box>
@@ -68,13 +71,14 @@ export const NewsletterForm = ({ title = "Subscribe to our newsletter" }) => {
                 size="medium"
                 fullWidth
                 type="submit"
-                disabled={subscribed}
+                disabled={state === "subscribing" || state === "subscribed"}
+                loading={state === "subscribing"}
               >
-                {subscribed ? "Thank you!" : "Subscribe"}
+                {state === "subscribed" ? "Thank you!" : "Subscribe"}
               </ButtonPrimary>
             </Box>
           </Box>
-          {error && <FormErrorText>{message}</FormErrorText>}
+          {state === "error" && <FormErrorText>{message}</FormErrorText>}
         </form>
       </Box>
     </Box>
