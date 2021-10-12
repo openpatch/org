@@ -41,6 +41,18 @@ export default function Projects() {
                 )}
                 <Card>
                   <CardHeader
+                    action={<TextLink href="/newsletter">Subscribe</TextLink>}
+                  >
+                    NewsLetter
+                  </CardHeader>
+                  <CardContent>
+                    Our newsletter will inform you about the latest development
+                    by OpenPatch and will send you tips on how you can design
+                    and conduct great formative and summative assessments.
+                  </CardContent>
+                </Card>
+                <Card>
+                  <CardHeader
                     action={
                       <TextLink href="https://github.com/openpatch/bitflow">
                         GitHub
