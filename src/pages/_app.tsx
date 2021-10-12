@@ -3,10 +3,12 @@ import { DefaultSeo } from "next-seo";
 import "typeface-rubik";
 import "typeface-ubuntu-mono";
 import { Link } from "../components/Link";
+import PlausibleScript from "../components/Plausible";
 
 function MyApp({ Component, pageProps }) {
   return (
     <PatchesProvider linkComponent={Link}>
+      <PlausibleScript />
       <DefaultSeo
         titleTemplate="OpenPatch | %s"
         defaultTitle="OpenPatch"
