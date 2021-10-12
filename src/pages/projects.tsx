@@ -43,7 +43,7 @@ export default function Projects() {
                   <CardHeader
                     action={<TextLink href="/newsletter">Subscribe</TextLink>}
                   >
-                    NewsLetter
+                    Newsletter
                   </CardHeader>
                   <CardContent>
                     Our newsletter will inform you about the latest development
