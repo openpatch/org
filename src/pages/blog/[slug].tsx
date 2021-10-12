@@ -16,6 +16,7 @@ import { NextSeo } from "next-seo";
 import path from "path";
 import { Fragment } from "react";
 import { NavLayout } from "../../components/NavLayout";
+import { NewsletterForm } from "../../components/NewsletterForm";
 import { postFilePaths, POSTS_PATH } from "../../utils/mdxUtils";
 
 interface Props {
@@ -35,6 +36,7 @@ interface Props {
 
 const components = {
   a: TextLink,
+  NewsletterForm,
 };
 
 export default function ExamplePage({ mdxSource, frontMatter }: Props) {
