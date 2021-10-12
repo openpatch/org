@@ -1,17 +1,16 @@
 import Script from "next/script";
+import { Fragment } from "react";
 
 const isProduction = process.env.NODE_ENV === "production";
 
 const PlausibleScript = () => {
   return (
-    <>
+    <Fragment>
       {isProduction && (
-        <>
+        <Fragment>
           <Script
             strategy="lazyOnload"
-            data-domain={
-              process.env.NEXT_PUBLIC_URL || process.env.NEXT_PUBLIC_VERCEL_URL
-            }
+            data-domain={process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN}
             src="https://plausible.io/js/plausible.js"
           />
           <Script strategy="lazyOnload" id="plausible-script">
@@ -19,9 +18,9 @@ const PlausibleScript = () => {
             window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }
         `}
           </Script>
-        </>
+        </Fragment>
       )}
-    </>
+    </Fragment>
   );
 };
 
