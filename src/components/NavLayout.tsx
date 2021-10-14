@@ -39,6 +39,10 @@ export const NavLayout: FC<NavLayoutProps> = ({ children }) => {
             label: "Contact",
           },
           {
+            href: "/imprint",
+            label: "Imprint",
+          },
+          {
             href: "https://twitter.com/openpatchorg",
             label: "Twitter",
           },
