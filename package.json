@@ -8,8 +8,8 @@
     "start": "next start"
   },
   "dependencies": {
-    "@emotion/cache": "11.4.0",
-    "@emotion/react": "11.4.1",
+    "@emotion/cache": "11.5.0",
+    "@emotion/react": "11.5.0",
     "@emotion/styled": "11.3.0",
     "@openpatch/patches": "1.12.2",
     "gray-matter": "4.0.3",
