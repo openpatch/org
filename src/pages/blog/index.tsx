@@ -2,8 +2,11 @@ import { css } from "@emotion/react";
 import {
   AutoGrid,
   Box,
+  ButtonPrimary,
+  ButtonPrimaryLink,
   Card,
   CardContent,
+  CardFooter,
   CardHeader,
   CardMedia,
   Main,
@@ -44,29 +47,23 @@ export default function Blog({ posts }: BlogProps) {
       <Main variant="overlap">
         <AutoGrid gap="standard">
           {posts.map(({ frontMatter, filePath }) => (
-            <Link
-              key={filePath}
-              href={`/blog/${filePath.replace(/\.mdx?$/, "")}`}
-              passHref
-            >
-              <Box
-                css={css`
-                  text-decoration: none;
-                `}
-                cursor="pointer"
-                as="a"
+            <Card key={filePath}>
+              <CardHeader
+                href={`/blog/${filePath.replace(/\.mdx?$/, "")}`}
+                subtitle={`${frontMatter.author.name} | ${frontMatter.publishedAt}`}
               >
-                <Card>
-                  <CardHeader
-                    subtitle={`${frontMatter.author.name} | ${frontMatter.publishedAt}`}
-                  >
-                    {frontMatter.title}
-                  </CardHeader>
-                  <CardMedia height="150px" image={frontMatter.image} />
-                  <CardContent>{frontMatter.abstract}</CardContent>
-                </Card>
-              </Box>
-            </Link>
+                {frontMatter.title}
+              </CardHeader>
+              <CardMedia height="150px" image={frontMatter.image} />
+              <CardContent>{frontMatter.abstract}</CardContent>
+              <CardFooter>
+                <ButtonPrimaryLink
+                  href={`/blog/${filePath.replace(/\.mdx?$/, "")}`}
+                >
+                  Read more
+                </ButtonPrimaryLink>
+              </CardFooter>
+            </Card>
           ))}
         </AutoGrid>
       </Main>
