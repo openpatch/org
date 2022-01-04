@@ -594,7 +594,7 @@
     "@codemirror/text" "^0.19.0"
     "@codemirror/view" "^0.19.0"
 
-"@codemirror/gutter@^0.19.4", "@codemirror/gutter@^0.19.5":
+"@codemirror/gutter@^0.19.4":
   version "0.19.5"
   resolved "https://registry.yarnpkg.com/@codemirror/gutter/-/gutter-0.19.5.tgz#b90527832c3f3066d1aeb53b003a764b5a561cfc"
   integrity sha512-Vqy+RXgBdnmbxNYx4/irQcfU9ecFz8SB/vhDOeHHSGtDqs+TihYHnHgBZLz6uILEG0YIjp0/zYY3P2NgZ/iyEg==
@@ -602,6 +602,15 @@
     "@codemirror/rangeset" "^0.19.0"
     "@codemirror/state" "^0.19.0"
     "@codemirror/view" "^0.19.0"
+
+"@codemirror/gutter@^0.19.9":
+  version "0.19.9"
+  resolved "https://registry.yarnpkg.com/@codemirror/gutter/-/gutter-0.19.9.tgz#bbb69f4d49570d9c1b3f3df5d134980c516cd42b"
+  integrity sha512-PFrtmilahin1g6uL27aG5tM/rqR9DZzZYZsIrCXA5Uc2OFTFqx4owuhoU9hqfYxHp5ovfvBwQ+txFzqS4vog6Q==
+  dependencies:
+    "@codemirror/rangeset" "^0.19.0"
+    "@codemirror/state" "^0.19.0"
+    "@codemirror/view" "^0.19.23"
 
 "@codemirror/highlight@^0.19.0", "@codemirror/highlight@^0.19.6":
   version "0.19.6"
@@ -611,6 +620,18 @@
     "@codemirror/language" "^0.19.0"
     "@codemirror/rangeset" "^0.19.0"
     "@codemirror/state" "^0.19.0"
+    "@codemirror/view" "^0.19.0"
+    "@lezer/common" "^0.15.0"
+    style-mod "^4.0.0"
+
+"@codemirror/highlight@^0.19.7":
+  version "0.19.7"
+  resolved "https://registry.yarnpkg.com/@codemirror/highlight/-/highlight-0.19.7.tgz#91a0c9994c759f5f153861e3aae74ff9e7c7c35b"
+  integrity sha512-3W32hBCY0pbbv/xidismw+RDMKuIag+fo4kZIbD7WoRj+Ttcaxjf+vP6RttRHXLaaqbWh031lTeON8kMlDhMYw==
+  dependencies:
+    "@codemirror/language" "^0.19.0"
+    "@codemirror/rangeset" "^0.19.0"
+    "@codemirror/state" "^0.19.3"
     "@codemirror/view" "^0.19.0"
     "@lezer/common" "^0.15.0"
     style-mod "^4.0.0"
@@ -649,7 +670,7 @@
     "@codemirror/language" "^0.19.0"
     "@lezer/java" "^0.15.0"
 
-"@codemirror/lang-javascript@^0.19.0", "@codemirror/lang-javascript@^0.19.3":
+"@codemirror/lang-javascript@^0.19.0":
   version "0.19.3"
   resolved "https://registry.yarnpkg.com/@codemirror/lang-javascript/-/lang-javascript-0.19.3.tgz#281b3447d8b65d98311ebf25893ef5c30a11418b"
   integrity sha512-2NE5z98Nz9Rv4OS5UtgehCSnyQjac+P85+evzy1D/4wllp/EPaHIEEtSP1daBvrLy49SdI/9vES3ZJu6rSv4/w==
@@ -662,15 +683,28 @@
     "@codemirror/view" "^0.19.0"
     "@lezer/javascript" "^0.15.1"
 
-"@codemirror/lang-markdown@^0.19.2":
-  version "0.19.2"
-  resolved "https://registry.yarnpkg.com/@codemirror/lang-markdown/-/lang-markdown-0.19.2.tgz#d475cee6e716f29bf90e3f687498c8ae06eefeb2"
-  integrity sha512-LFzY5TEPmKEBe9ABpG7XujW5pXZwyreunsROOwxewsri0XpupKj3WDfM8U7RwgM0aVc2pXP1u7R1C2MdQPOwPQ==
+"@codemirror/lang-javascript@^0.19.4":
+  version "0.19.4"
+  resolved "https://registry.yarnpkg.com/@codemirror/lang-javascript/-/lang-javascript-0.19.4.tgz#925447438a22da895030631bdd7e7ade8241a370"
+  integrity sha512-oRANfqQH5XNcfr0Y9pIzAxqXldLmCLpklknODtmEAZ8wQNBiVmgIeLb3JXdOJ43iZWnnmetkDOctFy/N8KuD4Q==
+  dependencies:
+    "@codemirror/autocomplete" "^0.19.0"
+    "@codemirror/highlight" "^0.19.7"
+    "@codemirror/language" "^0.19.0"
+    "@codemirror/lint" "^0.19.0"
+    "@codemirror/state" "^0.19.0"
+    "@codemirror/view" "^0.19.0"
+    "@lezer/javascript" "^0.15.1"
+
+"@codemirror/lang-markdown@^0.19.4":
+  version "0.19.4"
+  resolved "https://registry.yarnpkg.com/@codemirror/lang-markdown/-/lang-markdown-0.19.4.tgz#4a0809fdf85b1e8f039db5835b49b5b2ebd4a143"
+  integrity sha512-/MF/e1yRtiGOQOvHbXNv8AELITUT7tax1Zx3FCQTx8t28IdFOee6j0VPSghMcqskOQlNo8RXJBfP8bIyWPZBog==
   dependencies:
     "@codemirror/highlight" "^0.19.0"
     "@codemirror/lang-html" "^0.19.0"
     "@codemirror/language" "^0.19.0"
-    "@codemirror/state" "^0.19.0"
+    "@codemirror/state" "^0.19.3"
     "@codemirror/view" "^0.19.0"
     "@lezer/common" "^0.15.0"
     "@lezer/markdown" "^0.15.0"
@@ -695,10 +729,21 @@
     "@codemirror/state" "^0.19.0"
     "@lezer/lr" "^0.15.0"
 
-"@codemirror/language@^0.19.0", "@codemirror/language@^0.19.5":
+"@codemirror/language@^0.19.0":
   version "0.19.6"
   resolved "https://registry.yarnpkg.com/@codemirror/language/-/language-0.19.6.tgz#d43cabe852ab974eed379d14a8ba68b3fb4414b0"
   integrity sha512-or5TU/bxhsQdhXT70SK/h9V/gX/rElDEQyG29VbEDnHZ8TaDo3xsX900EYP02/tpIj8sConefmuMQfrePr+OCA==
+  dependencies:
+    "@codemirror/state" "^0.19.0"
+    "@codemirror/text" "^0.19.0"
+    "@codemirror/view" "^0.19.0"
+    "@lezer/common" "^0.15.5"
+    "@lezer/lr" "^0.15.0"
+
+"@codemirror/language@^0.19.7":
+  version "0.19.7"
+  resolved "https://registry.yarnpkg.com/@codemirror/language/-/language-0.19.7.tgz#9eef8e827692d93a701b18db9d46a42be34ecca6"
+  integrity sha512-pNNUtYWMIMG0lUSKyUXJr8U0rFiCKsKFXbA2Oj17PC+S1FY99hV0z1vcntW67ekAIZw9DMEUQnLsKBuIbAUX7Q==
   dependencies:
     "@codemirror/state" "^0.19.0"
     "@codemirror/text" "^0.19.0"
@@ -744,6 +789,13 @@
   dependencies:
     "@codemirror/state" "^0.19.0"
 
+"@codemirror/rangeset@^0.19.5":
+  version "0.19.5"
+  resolved "https://registry.yarnpkg.com/@codemirror/rangeset/-/rangeset-0.19.5.tgz#82dd2583324f5d5ffacf58922170bc5f3010e076"
+  integrity sha512-L3b+RIwIRKOJ3pJLOtpkxCUjGnxZKFyPb0CjYWKnVLuzEIaEExWWK7sp6rsejxOy8RjYzfCHlFhYB4UdQN7brw==
+  dependencies:
+    "@codemirror/state" "^0.19.0"
+
 "@codemirror/state@^0.19.0", "@codemirror/state@^0.19.3", "@codemirror/state@^0.19.4", "@codemirror/state@^0.19.5":
   version "0.19.6"
   resolved "https://registry.yarnpkg.com/@codemirror/state/-/state-0.19.6.tgz#d631f041d39ce41b7891b099fca26cb1fdb9763e"
@@ -764,12 +816,23 @@
     "@codemirror/state" "^0.19.0"
     "@codemirror/view" "^0.19.0"
 
-"@codemirror/view@^0.19.0", "@codemirror/view@^0.19.19":
+"@codemirror/view@^0.19.0":
   version "0.19.21"
   resolved "https://registry.yarnpkg.com/@codemirror/view/-/view-0.19.21.tgz#60c7bbb4bedf5580dec73c0b441645f6205f6206"
   integrity sha512-us5ENWr3ZFdXnIkylqVM3KCIPYepLyFhNmQqYMI3w2i/+ERoJGtyKPhiFuk5NpUjkONaZB3cHGBU+Z3mjqQFiw==
   dependencies:
     "@codemirror/rangeset" "^0.19.0"
+    "@codemirror/state" "^0.19.3"
+    "@codemirror/text" "^0.19.0"
+    style-mod "^4.0.0"
+    w3c-keyname "^2.2.4"
+
+"@codemirror/view@^0.19.23", "@codemirror/view@^0.19.37":
+  version "0.19.37"
+  resolved "https://registry.yarnpkg.com/@codemirror/view/-/view-0.19.37.tgz#36fe17c774525c775af57e7dde2867b3b7cb400f"
+  integrity sha512-SLuLx9p0O1ZHXLehvl5MwSvUrQRcsNGemzTgJ0zRajmc3BBsNigI1PXxdo7tvBhO5DcAzRRBXoke9DZFUR6Qqg==
+  dependencies:
+    "@codemirror/rangeset" "^0.19.5"
     "@codemirror/state" "^0.19.3"
     "@codemirror/text" "^0.19.0"
     style-mod "^4.0.0"
@@ -1114,24 +1177,24 @@
   dependencies:
     "@napi-rs/triples" "^1.0.3"
 
-"@openpatch/patches@5.1.0":
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/@openpatch/patches/-/patches-5.1.0.tgz#732279e54397a78aaf6151fa61c734faa549a19f"
-  integrity sha512-MkpuF+SWOazumRd5jhlARXkvyy7UjKyDfSpLmjiqnpLVKyvSgCQRitpU+LcdKHN7h56JsBrHdaTTVn3w7JGEaQ==
+"@openpatch/patches@5.1.2":
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/@openpatch/patches/-/patches-5.1.2.tgz#81c70eb042014590b18036b0a1717236211fdd2c"
+  integrity sha512-tB+OwweLQMGlbtv1QbicfqqYceJaNa/lsiMgJzlwGJksCSSi7HISYds8zBwH+f7ieqolkMBUQ7OQF8GKOXmm6g==
   dependencies:
     "@codemirror/closebrackets" "^0.19.0"
     "@codemirror/comment" "^0.19.0"
-    "@codemirror/gutter" "^0.19.5"
-    "@codemirror/highlight" "^0.19.6"
+    "@codemirror/gutter" "^0.19.9"
+    "@codemirror/highlight" "^0.19.7"
     "@codemirror/lang-java" "^0.19.1"
-    "@codemirror/lang-javascript" "^0.19.3"
-    "@codemirror/lang-markdown" "^0.19.2"
+    "@codemirror/lang-javascript" "^0.19.4"
+    "@codemirror/lang-markdown" "^0.19.4"
     "@codemirror/lang-python" "^0.19.2"
     "@codemirror/lang-sql" "^0.19.4"
-    "@codemirror/language" "^0.19.5"
+    "@codemirror/language" "^0.19.7"
     "@codemirror/matchbrackets" "^0.19.3"
     "@codemirror/state" "^0.19.5"
-    "@codemirror/view" "^0.19.19"
+    "@codemirror/view" "^0.19.37"
     lodash "^4.17.21"
     polished "^4.1.1"
     react-markdown "^5.0.3"
@@ -1140,7 +1203,6 @@
     react-tabs "^3.2.1"
     react-toastify "^8.0.3"
     remark-gfm "^1.0.0"
-    rodemirror "^1.6.5"
     styled-system "^5.1.5"
 
 "@styled-system/background@^5.1.2":
@@ -3661,11 +3723,6 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
   dependencies:
     hash-base "^3.0.0"
     inherits "^2.0.1"
-
-rodemirror@^1.6.5:
-  version "1.6.5"
-  resolved "https://registry.yarnpkg.com/rodemirror/-/rodemirror-1.6.5.tgz#e7ec08738c696232217854fda96f9c799ce7d70b"
-  integrity sha512-18FB22ngNIsTi/07jKGPWKwOM/qfPQoojU4770oY35uwSqPPVmXTyM/7iIyLRk7rRhO+77PYFKrqy2mNG3kpoQ==
 
 safe-buffer@^5.0.1, safe-buffer@^5.1.0, safe-buffer@^5.1.1, safe-buffer@^5.1.2, safe-buffer@^5.2.0, safe-buffer@~5.2.0:
   version "5.2.1"
