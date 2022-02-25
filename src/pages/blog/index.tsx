@@ -1,8 +1,5 @@
-import { css } from "@emotion/react";
 import {
   AutoGrid,
-  Box,
-  ButtonPrimary,
   ButtonPrimaryLink,
   Card,
   CardContent,
@@ -16,7 +13,6 @@ import fs from "fs";
 import matter from "gray-matter";
 import { GetStaticProps } from "next";
 import { DefaultSeo } from "next-seo";
-import Link from "next/link";
 import path from "path";
 import { NavLayout } from "../../components/NavLayout";
 import { postFilePaths, POSTS_PATH } from "../../utils/mdxUtils";
@@ -24,6 +20,7 @@ import { postFilePaths, POSTS_PATH } from "../../utils/mdxUtils";
 type BlogProps = {
   posts: {
     content: string;
+    translated: boolean;
     frontMatter: {
       author: {
         name: string;
@@ -71,16 +68,24 @@ export default function Blog({ posts }: BlogProps) {
   );
 }
 
-export const getStaticProps: GetStaticProps<BlogProps> = async () => {
+export const getStaticProps: GetStaticProps<BlogProps> = async ({ locale }) => {
+  let translated = true;
   const posts = postFilePaths
     .map((filePath) => {
-      const source = fs.readFileSync(path.join(POSTS_PATH, filePath));
+      let source: Buffer;
+      try {
+        source = fs.readFileSync(path.join(POSTS_PATH, locale, filePath));
+      } catch (e) {
+        source = fs.readFileSync(path.join(POSTS_PATH, "en", filePath));
+        translated = false;
+      }
       const { content, data } = matter(source);
 
       return {
         content,
         frontMatter: data as BlogProps["posts"][0]["frontMatter"],
         filePath,
+        translated
       };
     })
     .sort((a, b) =>
