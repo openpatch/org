@@ -58,7 +58,7 @@ export default function ExamplePage({
   )}.png?md=1&fontSize=100px&username=${encodeURIComponent(
     frontMatter.author.name
   )}&avatar=${encodeURIComponent(frontMatter.author.image)}`;
-  const contributeTranslationLink = `https://github.com/openpatch/org/new/main/src/blog/${locale}?filename=${slug}.mdx&value=${encodeURIComponent(raw)}`
+  const contributeTranslationLink = `https://github.com/openpatch/org/new/main/src/blog/${locale}/new?filename=${slug}.mdx&value=${encodeURIComponent(raw)}`
 
   return (
     <Fragment>
