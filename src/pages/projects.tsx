@@ -90,6 +90,26 @@ export default function Projects() {
                     and feel.
                   </CardContent>
                 </Card>
+                <Card>
+                  <CardHeader
+                    action={
+                      <TextLink href="https://github.com/openpatch/hyperbook">
+                        GitHub
+                      </TextLink>
+                    }
+                    subtitle="library"
+                  >
+                    Hyperbook
+                  </CardHeader>
+                  <CardMedia
+                    height="80px"
+                    image="/static/hyperbook.png"
+                  ></CardMedia>
+                  <CardContent>
+                  Hyperbook is a quick and easy way to build interactive workbooks, that support
+                  modern standards and run superfast.
+                  </CardContent>
+                </Card>
               </AutoGrid>
             </Center>
           </Container>
