@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@emotion/cache": "11.7.1",
-    "@emotion/react": "11.8.1",
+    "@emotion/react": "11.8.2",
     "@emotion/styled": "11.8.1",
     "@openpatch/patches": "5.1.4",
     "gray-matter": "4.0.3",
