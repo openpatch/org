@@ -951,10 +951,10 @@
   resolved "https://registry.yarnpkg.com/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-12.1.0.tgz#d27e7e76c87a460a4da99c5bfdb1618dcd6cd064"
   integrity sha512-aBvcbMwuanDH4EMrL2TthNJy+4nP59Bimn8egqv6GHMVj0a44cU6Au4PjOhLNqEh9l+IpRGBqMTzec94UdC5xg==
 
-"@openpatch/patches@5.1.4":
-  version "5.1.4"
-  resolved "https://registry.yarnpkg.com/@openpatch/patches/-/patches-5.1.4.tgz#3b1e44205d58beb5766358469df02bbb1b094020"
-  integrity sha512-1pwJGTRbzDcb8FOLTa05PFC0UMT/djpXP1Lz62twzQYEIIf53beCkE1XNWgHggrkyAwtylSc6LO6OkIBpYmWXQ==
+"@openpatch/patches@5.2.0":
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/@openpatch/patches/-/patches-5.2.0.tgz#fb3ed87eb3e28ffd125641d0894e20a25682188d"
+  integrity sha512-KdU4uv2ZCpqvp5jeb7l3dhRUPTJ243g4V91zqVtSeuqrfE2MykHtd218TrSLcTIIHGtxbw9JbQNhmNuoVdDvIQ==
   dependencies:
     "@codemirror/closebrackets" "^0.19.0"
     "@codemirror/comment" "^0.19.0"
