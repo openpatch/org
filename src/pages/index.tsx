@@ -24,7 +24,7 @@ export default function Home() {
             OpenPatch
           </Heading>
           <Heading textColor="card" as="h2" textAlign="center">
-            Assessment of Programming Competencies
+            Assessment and Training of Programming Competencies
           </Heading>
         </Center>
       </Pattern>
@@ -33,10 +33,10 @@ export default function Home() {
           <Heading as="h2">Our Work</Heading>
           <Box maxWidth="800px" mb="large">
             <Text textAlign="center" fontSize="large">
-              OpenPatch is a group of developer, educator and researchers
-              specialized in assessments of programming competencies. We create
+              OpenPatch is a group of developer, educators and researchers
+              specialized in assessments and training of programming competencies. We create
               dynamic flow-based assessments, interactive task formats, easy to
-              understand reports and a platform for sharing.
+              understand reports, a platform for sharing and interactive workbooks.
             </Text>
           </Box>
           <AutoGrid columns={[1, 2, 2]} gap="standard">
