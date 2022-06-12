@@ -8,9 +8,9 @@
     "start": "next start"
   },
   "dependencies": {
-    "@emotion/cache": "11.7.1",
-    "@emotion/react": "11.9.0",
-    "@emotion/styled": "11.8.1",
+    "@emotion/cache": "11.9.3",
+    "@emotion/react": "11.9.3",
+    "@emotion/styled": "11.9.3",
     "@openpatch/patches": "5.2.1",
     "gray-matter": "4.0.3",
     "next": "12.1.6",
