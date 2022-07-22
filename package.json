@@ -13,7 +13,7 @@
     "@emotion/styled": "11.9.3",
     "@openpatch/patches": "5.2.1",
     "gray-matter": "4.0.3",
-    "next": "12.2.2",
+    "next": "12.2.3",
     "next-mdx-remote": "4.1.0",
     "next-seo": "5.5.0",
     "react": "17.0.2",
