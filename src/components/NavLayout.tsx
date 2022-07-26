@@ -1,7 +1,7 @@
 import { Footer, Logo, Nav, TextLink } from "@openpatch/patches";
-import { FC, Fragment } from "react";
+import { FC, Fragment, ReactNode } from "react";
 
-export type NavLayoutProps = {};
+export type NavLayoutProps = { children: ReactNode };
 
 export const NavLayout: FC<NavLayoutProps> = ({ children }) => {
   return (
