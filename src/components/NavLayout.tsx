@@ -26,8 +26,8 @@ export const NavLayout: FC<NavLayoutProps> = ({ children }) => {
             href: "/blog",
           },
           {
-            label: "Discord",
-            href: "https://discord.gg/dCMM4kV",
+            label: "Matrix (Chat)",
+            href: "https://matrix.to/#/#openpatch:matrix.org",
           },
         ]}
       />
