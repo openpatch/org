@@ -18,12 +18,8 @@ export const NavLayout: FC<NavLayoutProps> = ({ children }) => {
             href: "/projects",
           },
           {
-            label: "About",
-            href: "/about",
-          },
-          {
-            label: "Blog",
-            href: "/blog",
+            label: "Team",
+            href: "/team",
           },
           {
             label: "Matrix (Chat)",

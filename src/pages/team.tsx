@@ -15,28 +15,15 @@ import {
 import { DefaultSeo } from "next-seo";
 import { NavLayout } from "../components/NavLayout";
 
-export default function About() {
+export default function Team() {
   return (
     <NavLayout>
-      <DefaultSeo title="About" />
+      <DefaultSeo title="Team" />
       <Main>
         <Box mx="standard">
           <Container>
-            <Center mt="xxlarge">
-              <Heading as="h1">About</Heading>
-              <Text textAlign="center" mt="standard" fontSize="large">
-                Since the initial release of OpenPatch App in 2018 we worked
-                hard continuing improving our assessment platform and the
-                assessment of programming competencies in general. We are a
-                community of great researchers, educators and developers. The
-                purpose of the OpenPatch is to provide rich and interactive
-                assessment to everyone. If you want to join the permant team,
-                feel free to write us an{" "}
-                <TextLink href="mailto:contact@openpatch.org">e-mail</TextLink>.
-              </Text>
-            </Center>
             <Center my="xxlarge">
-              <Heading as="h2">Team</Heading>
+              <Heading as="h1">Team</Heading>
               <Box mt="standard">
                 <AutoGrid gap="standard" columns={[1, 2]}>
                   <Card>
