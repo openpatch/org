@@ -1,5 +1,7 @@
-import { Footer, Logo, Nav, TextLink } from "@openpatch/patches";
+import { Box, Footer, Logo, Nav, TextLink } from "@openpatch/patches";
 import { FC, Fragment, ReactNode } from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 export type NavLayoutProps = { children: ReactNode };
 
@@ -28,6 +30,17 @@ export const NavLayout: FC<NavLayoutProps> = ({ children }) => {
         ]}
       />
       {children}
+      <Box mb="medium" textAlign="center">
+        <Link href="https://vercel.com?utm_source=openpatch&utm_campaign=oss">
+          <a>
+            <Image
+              src="/static/powered-by-vercel-black.svg"
+              width={212}
+              height={44}
+            />
+          </a>
+        </Link>
+      </Box>
       <Footer
         links={[
           {
