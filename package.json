@@ -14,7 +14,7 @@
     "@openpatch/patches": "6.0.1",
     "gray-matter": "4.0.3",
     "next": "12.3.4",
-    "next-mdx-remote": "4.4.0",
+    "next-mdx-remote": "4.4.1",
     "next-seo": "5.15.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
