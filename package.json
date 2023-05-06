@@ -8,9 +8,9 @@
     "start": "next start"
   },
   "dependencies": {
-    "@emotion/cache": "11.10.8",
-    "@emotion/react": "11.10.8",
-    "@emotion/styled": "11.10.8",
+    "@emotion/cache": "11.11.0",
+    "@emotion/react": "11.11.0",
+    "@emotion/styled": "11.11.0",
     "@openpatch/patches": "6.0.1",
     "gray-matter": "4.0.3",
     "next": "12.3.4",
@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.21.8",
-    "@emotion/babel-preset-css-prop": "11.10.0",
+    "@emotion/babel-preset-css-prop": "11.11.0",
     "@types/node": "18.16.5",
     "@types/react": "18.2.5",
     "typescript": "4.9.5",
