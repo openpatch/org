@@ -23,7 +23,7 @@
     "typeface-ubuntu-mono": "1.1.13"
   },
   "devDependencies": {
-    "@babel/core": "7.22.0",
+    "@babel/core": "7.22.1",
     "@emotion/babel-preset-css-prop": "11.11.0",
     "@types/node": "18.16.15",
     "@types/react": "18.2.7",
