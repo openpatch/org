@@ -26,14 +26,6 @@ export default function Imprint() {
             </Center>
             <AutoGrid columns={[1, 2, 2]} gap="standard">
               <Card>
-                <CardHeader>Address</CardHeader>
-                <CardContent>
-                  <Text>Mike Barkmin</Text>
-                  <Text>Robert-Stolz-Str. 15</Text>
-                  <Text>40470 Düsseldorf</Text>
-                </CardContent>
-              </Card>
-              <Card>
                 <CardHeader>Contact</CardHeader>
                 <CardContent>
                   <Text>
