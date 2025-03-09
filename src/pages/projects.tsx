@@ -31,24 +31,81 @@ export default function Projects() {
             </Center>
             <Center my="xxlarge">
               <AutoGrid columns={[1, 2]} gap="xlarge">
-                {false && (
-                  <Card>
-                    <CardHeader subtitle="platform">OpenPatch</CardHeader>
-                    <CardContent>
-                      A platform for exchanging flow-based assessments.
-                    </CardContent>
-                  </Card>
-                )}
                 <Card>
                   <CardHeader
-                    action={<TextLink href="/newsletter">Subscribe</TextLink>}
+                    action={
+                      <TextLink href="https://github.com/openpatch/scratch-for-java">
+                        GitHub
+                      </TextLink>
+                    }
+                    subtitle="library"
                   >
-                    Newsletter
+                    Scratch for Java
                   </CardHeader>
+                  <CardMedia
+                    height="80px"
+                    image="/static/scratch4j.png"
+                  ></CardMedia>
                   <CardContent>
-                    Our newsletter will inform you about the latest development
-                    by OpenPatch and will send you tips on how you can design
-                    and conduct great formative and summative assessments.
+                    To ease the transition from the block-based programming environment Scratch to Java this library was created. Therefore, the core elements of Scratch are remodeled.
+                  </CardContent>
+                </Card>
+                <Card>
+                  <CardHeader
+                    action={
+                      <TextLink href="https://github.com/openpatch/hyperbook">
+                        GitHub
+                      </TextLink>
+                    }
+                    subtitle="library"
+                  >
+                    Hyperbook
+                  </CardHeader>
+                  <CardMedia
+                    height="80px"
+                    image="/static/hyperbook.png"
+                  ></CardMedia>
+                  <CardContent>
+                    Hyperbook is a quick and easy way to build interactive workbooks, that support
+                    modern standards and run superfast.
+                  </CardContent>
+                </Card>
+                <Card>
+                  <CardHeader
+                    action={
+                      <TextLink href="https://github.com/openpatch/java-memory-playground">
+                        GitHub
+                      </TextLink>
+                    }
+                    subtitle="library"
+                  >
+                    Java Memory Playground
+                  </CardHeader>
+                  <CardMedia
+                    height="80px"
+                    image="/static/jmp.png"
+                  ></CardMedia>
+                  <CardContent>
+                    Playground to getting to know the internals of the stack and heap of a Java application.
+                  </CardContent>
+                </Card>
+                <Card>
+                  <CardHeader
+                    action={
+                      <TextLink href="https://github.com/openpatch/java-memory-playground">
+                        GitHub
+                      </TextLink>
+                    }
+                    subtitle="library"
+                  >
+                    Manual Neural Network
+                  </CardHeader>
+                  <CardMedia
+                    height="80px"
+                    image="/static/mnn.png"
+                  ></CardMedia>
+                  <CardContent>
+                    Playground to getting to know the internals of a neural network.
                   </CardContent>
                 </Card>
                 <Card>
@@ -68,46 +125,6 @@ export default function Projects() {
                   ></CardMedia>
                   <CardContent>
                     A library for building flow-based assessment systems.
-                  </CardContent>
-                </Card>
-                <Card>
-                  <CardHeader
-                    action={
-                      <TextLink href="https://github.com/openpatch/patches">
-                        GitHub
-                      </TextLink>
-                    }
-                    subtitle="library"
-                  >
-                    Patches
-                  </CardHeader>
-                  <CardMedia
-                    height="80px"
-                    image="https://raw.githubusercontent.com/openpatch/patches/main/.storybook/public/patches_title.png"
-                  ></CardMedia>
-                  <CardContent>
-                    A design system build for OpenPatch to give us a unique look
-                    and feel.
-                  </CardContent>
-                </Card>
-                <Card>
-                  <CardHeader
-                    action={
-                      <TextLink href="https://github.com/openpatch/hyperbook">
-                        GitHub
-                      </TextLink>
-                    }
-                    subtitle="library"
-                  >
-                    Hyperbook
-                  </CardHeader>
-                  <CardMedia
-                    height="80px"
-                    image="/static/hyperbook.png"
-                  ></CardMedia>
-                  <CardContent>
-                  Hyperbook is a quick and easy way to build interactive workbooks, that support
-                  modern standards and run superfast.
                   </CardContent>
                 </Card>
               </AutoGrid>
