@@ -104,7 +104,7 @@ export default function Home() {
                   </TextLink>
                   <br />
                   <TextLink href="https://twitter.com/openpatchorg">
-                    Twitter: @openpatchorg
+                    Mastodon: @openpatch@fosstodon.org
                   </TextLink>
                 </Text>
               </Center>
