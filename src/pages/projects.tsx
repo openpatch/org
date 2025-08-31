@@ -111,6 +111,25 @@ export default function Projects() {
                 <Card>
                   <CardHeader
                     action={
+                      <TextLink href="https://github.com/openpatch/parsons-puzzle">
+                        GitHub
+                      </TextLink>
+                    }
+                    subtitle="library"
+                  >
+                    Parsons Puzzle
+                  </CardHeader>
+                  <CardMedia
+                    height="80px"
+                    image="/static/parsons-puzzle.jpg"
+                  ></CardMedia>
+                  <CardContent>
+                    A online tool to create and solve Parsons Problems without needing an account. Everything is stored in the URL.
+                  </CardContent>
+                </Card>
+                <Card>
+                  <CardHeader
+                    action={
                       <TextLink href="https://github.com/openpatch/bitflow">
                         GitHub
                       </TextLink>
