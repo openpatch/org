@@ -77,7 +77,7 @@ export default function Projects() {
                         GitHub
                       </TextLink>
                     }
-                    subtitle="library"
+                    subtitle="tool"
                   >
                     Java Memory Playground
                   </CardHeader>
@@ -96,7 +96,7 @@ export default function Projects() {
                         GitHub
                       </TextLink>
                     }
-                    subtitle="library"
+                    subtitle="tool"
                   >
                     Manual Neural Network
                   </CardHeader>
@@ -115,7 +115,7 @@ export default function Projects() {
                         GitHub
                       </TextLink>
                     }
-                    subtitle="library"
+                    subtitle="tool"
                   >
                     Parsons Puzzle
                   </CardHeader>
