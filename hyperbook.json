@@ -1,0 +1,73 @@
+{
+  "name": "OpenPatch",
+  "description": "Open Projects for Assessment and Training of Computing Competencies",
+  "logo": "/logo.png",
+  "language": "en",
+  "allowDangerousHtml": true,
+  "license": "MIT",
+  "search": true,
+  "qrcode": true,
+  "author": {
+    "name": "OpenPatch",
+    "url": "https://openpatch.org"
+  },
+  "colors": {
+    "brand": "#007864",
+    "brandDark": "#b5e3d8",
+    "brandText": "#ffffff"
+  },
+  "fonts": {
+    "heading": "/fonts/Montserrat-VariableFont_wght.ttf",
+    "body": "/fonts/Montserrat-VariableFont_wght.ttf"
+  },
+  "scripts": ["/plausible.js"],
+  "breadcrumb": {
+    "home": "Home"
+  },
+  "repo": {
+    "url": "https://github.com/openpatch/org/edit/main/%path%",
+    "label": "Edit this page"
+  },
+  "elements": {
+    "bookmarks": false
+  },
+  "links": [
+    {
+      "label": "Projects",
+      "href": "/projects"
+    },
+    {
+      "label": "Team",
+      "href": "/team"
+    },
+    {
+      "label": "Community",
+      "links": [
+        {
+          "label": "GitHub",
+          "icon": "🐙",
+          "href": "https://github.com/openpatch"
+        },
+        {
+          "label": "Matrix",
+          "icon": "💬",
+          "href": "https://matrix.to/#/#openpatch:matrix.org"
+        },
+        {
+          "label": "Mastodon",
+          "icon": "🐘",
+          "href": "https://fosstodon.org/@openpatch"
+        }
+      ]
+    },
+    {
+      "label": "Contact",
+      "icon": "📧",
+      "href": "mailto:contact@openpatch.org"
+    },
+    {
+      "label": "Imprint",
+      "href": "/imprint"
+    }
+  ]
+}
