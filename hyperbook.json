@@ -5,6 +5,7 @@
   "language": "en",
   "allowDangerousHtml": true,
   "license": "MIT",
+  "version": "text",
   "search": true,
   "qrcode": true,
   "author": {
