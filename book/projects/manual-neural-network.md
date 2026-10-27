@@ -3,6 +3,7 @@ name: Manual Neural Network
 index: 12
 description: Playground to get to know the internals of a neural network.
 keywords: ["tool"]
+url: https://mnn.openpatch.org
 ---
 
 # Manual Neural Network
@@ -21,4 +22,5 @@ actually computes before any training is involved.
 
 ## Links
 
+- Playground: [mnn.openpatch.org](https://mnn.openpatch.org)
 - Source: [github.com/openpatch/manual-neural-network](https://github.com/openpatch/manual-neural-network)

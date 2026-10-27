@@ -3,6 +3,7 @@ name: Lernen mit Spaß
 index: 5
 description: Mini games for maths and computer science lessons that a whole class plays together in real time.
 keywords: ["app", "game"]
+url: https://lms.openpatch.org
 ---
 
 # Lernen mit Spaß
@@ -28,4 +29,5 @@ same time.
 
 ## Links
 
+- Website: [lms.openpatch.org](https://lms.openpatch.org)
 - Source: [github.com/openpatch/lms](https://github.com/openpatch/lms)

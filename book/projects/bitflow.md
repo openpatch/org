@@ -3,6 +3,7 @@ name: Bitflow
 index: 2
 description: A library for creating and conducting dynamic flow-based assessments.
 keywords: ["library"]
+url: https://bitflow.openpatch.org
 ---
 
 # Bitflow
@@ -22,4 +23,5 @@ student takes can react to the answers they give along the way.
 
 ## Links
 
+- Demos: [bitflow.openpatch.org](https://bitflow.openpatch.org)
 - Source: [github.com/openpatch/bitflow](https://github.com/openpatch/bitflow)

@@ -3,6 +3,7 @@ name: Java Memory Playground
 index: 11
 description: Playground to get to know the internals of the stack and heap of a Java application.
 keywords: ["tool"]
+url: https://jmp.openpatch.org
 ---
 
 # Java Memory Playground
@@ -22,4 +23,5 @@ and stack frames are created and removed.
 
 ## Links
 
+- Playground: [jmp.openpatch.org](https://jmp.openpatch.org)
 - Source: [github.com/openpatch/java-memory-playground](https://github.com/openpatch/java-memory-playground)

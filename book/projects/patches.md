@@ -3,6 +3,7 @@ name: Patches
 index: 13
 description: The OpenPatch Design System.
 keywords: ["library"]
+url: https://patches.openpatch.org
 ---
 
 # Patches
@@ -29,4 +30,5 @@ available on npm, but we are no longer actively developing new features.
 ## Links
 
 - Source: [github.com/openpatch/patches](https://github.com/openpatch/patches)
+- Component gallery: [patches.openpatch.org](https://patches.openpatch.org)
 - Package: [@openpatch/patches on npm](https://www.npmjs.com/package/@openpatch/patches)

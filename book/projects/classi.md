@@ -3,6 +3,7 @@ name: Classi
 index: 10
 description: A local-first app for teachers — groups, students, grades, notes, checklists and material tracking in encrypted libraries.
 keywords: ["app"]
+url: https://classi.openpatch.org
 ---
 
 # Classi
@@ -24,4 +25,5 @@ portable across devices.
 
 ## Links
 
+- Website: [classi.openpatch.org](https://classi.openpatch.org)
 - Source: [github.com/openpatch/classi](https://github.com/openpatch/classi)
