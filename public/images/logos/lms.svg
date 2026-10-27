@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Rounded square background -->
+  <rect x="4" y="4" width="56" height="56" rx="14" fill="#007864"/>
+  <!-- Square root symbol -->
+  <path
+    d="M16 38 L22 38 L27 50 L36 22 L48 22"
+    fill="none"
+    stroke="#b5e3d8"
+    stroke-width="4"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <!-- Playful dot (the "answer") -->
+  <circle cx="48" cy="22" r="3" fill="#b5e3d8"/>
+  <!-- Small sparkle for fun -->
+  <path
+    d="M44 42 L46 38 L48 42 L52 44 L48 46 L46 50 L44 46 L40 44 Z"
+    fill="#b5e3d8"
+    opacity="0.7"
+  />
+</svg>

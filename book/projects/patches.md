@@ -1,6 +1,6 @@
 ---
 name: Patches
-index: 5
+index: 13
 description: The OpenPatch Design System.
 keywords: ["library"]
 ---
@@ -12,6 +12,13 @@ keywords: ["library"]
 Patches is the OpenPatch Design System. It is the React component library that
 gives our applications a consistent look and behaviour, and it is published on
 npm as `@openpatch/patches`.
+
+:::note
+
+Patches is in maintenance mode — the component library still works and stays
+available on npm, but we are no longer actively developing new features.
+
+:::
 
 ## Highlights
 

@@ -1,11 +1,13 @@
 ---
 name: Manual Neural Network
-index: 8
+index: 12
 description: Playground to get to know the internals of a neural network.
 keywords: ["tool"]
 ---
 
-# Manual Neural Network :brain:
+# Manual Neural Network
+
+-![Manual Neural Network logo](/images/logos/manual-neural-network.svg){width=120}
 
 A playground for getting to know the internals of a neural network. Weights and
 biases are set by hand, so students can build an intuition for what a network

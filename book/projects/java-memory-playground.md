@@ -1,11 +1,13 @@
 ---
 name: Java Memory Playground
-index: 7
+index: 11
 description: Playground to get to know the internals of the stack and heap of a Java application.
 keywords: ["tool"]
 ---
 
-# Java Memory Playground :coffee:
+# Java Memory Playground
+
+-![Java Memory Playground logo](/images/logos/java-memory-playground.svg){width=120}
 
 A playground for getting to know the internals of the stack and heap of a Java
 application. Students step through a program and watch how objects, references

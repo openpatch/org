@@ -30,3 +30,4 @@ This website is built with Hyperbook.
 
 - Website: [hyperbook.openpatch.org](https://hyperbook.openpatch.org)
 - Source: [github.com/openpatch/hyperbook](https://github.com/openpatch/hyperbook)
+- Starter template: [github.com/openpatch/hyperbook-anywhere](https://github.com/openpatch/hyperbook-anywhere)
