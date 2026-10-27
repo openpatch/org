@@ -3,6 +3,7 @@ name: Blockflow
 index: 9
 description: Our fork of the Scratch editor, used as the base for block-based editors and learning tools.
 keywords: ["editor"]
+url: https://blockflow.openpatch.org
 ---
 
 # Blockflow
@@ -27,6 +28,7 @@ under the terms given in the
 
 ## Links
 
+- Website: [blockflow.openpatch.org](https://blockflow.openpatch.org)
 - Source: [github.com/openpatch/blockflow](https://github.com/openpatch/blockflow)
 - Upstream: [scratchfoundation/scratch-editor](https://github.com/scratchfoundation/scratch-editor)
 - Scratch: [scratch.mit.edu](https://scratch.mit.edu)
